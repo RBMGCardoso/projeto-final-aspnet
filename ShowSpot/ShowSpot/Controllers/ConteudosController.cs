@@ -55,7 +55,7 @@ namespace ShowSpot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,ImgUrl,Tipo")] Conteudos conteudos)
+        public async Task<IActionResult> Create([Bind("Id,Nome,ImgUrl,Sinopse,Rating,Tipo")] Conteudos conteudos)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace ShowSpot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ImgUrl,Tipo")] Conteudos conteudos)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ImgUrl,Sinopse,Rating,Tipo")] Conteudos conteudos)
         {
             if (id != conteudos.Id)
             {
