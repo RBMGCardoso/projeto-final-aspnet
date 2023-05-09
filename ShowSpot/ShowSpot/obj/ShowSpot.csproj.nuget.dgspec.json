@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodri\\Source\\Repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj": {}
+    "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodri\\Source\\Repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj": {
+    "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj",
         "projectName": "ShowSpot",
-        "projectPath": "C:\\Users\\rodri\\Source\\Repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj",
+        "projectPath": "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj",
         "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\Source\\Repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\obj\\",
+        "outputPath": "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,6 +67,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
