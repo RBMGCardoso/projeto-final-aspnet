@@ -25,6 +25,13 @@ namespace ShowSpot.Controllers
             return View(await _context.Conteudos.ToListAsync());
 
         }
+        
+        // GET: Conteudos/Filmes
+        public IActionResult Filmes()
+        {
+            ViewBag.Filmes = _context.Conteudos.ToList();
+            return View();
+        }
 
         // GET: Conteudos/Details/5
         public async Task<IActionResult> Details(int? id)
