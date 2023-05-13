@@ -48,8 +48,8 @@ namespace ShowSpot.Controllers
         // GET: Recomendados/Create
         public IActionResult Create()
         {
-            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Id");
-            ViewData["UtilizadorFK"] = new SelectList(_context.Utilizadores, "Id", "Id");
+            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome");
+            ViewData["UtilizadorFK"] = new SelectList(_context.Utilizadores, "Id", "Nome");
             return View();
         }
 
@@ -60,15 +60,9 @@ namespace ShowSpot.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UtilizadorFK,ConteudosFK")] Recomendados recomendados)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(recomendados);
+            _context.Add(recomendados);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Id", recomendados.ConteudosFK);
-            ViewData["UtilizadorFK"] = new SelectList(_context.Utilizadores, "Id", "Id", recomendados.UtilizadorFK);
-            return View(recomendados);
         }
 
         // GET: Recomendados/Edit/5

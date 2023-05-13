@@ -48,8 +48,8 @@ namespace ShowSpot.Controllers
         // GET: WatchLater/Create
         public IActionResult Create()
         {
-            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Id");
-            ViewData["UtilizadorFK"] = new SelectList(_context.Utilizadores, "Id", "Id");
+            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome");
+            ViewData["UtilizadorFK"] = new SelectList(_context.Utilizadores, "Id", "Nome");
             return View();
         }
 
@@ -60,15 +60,9 @@ namespace ShowSpot.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UtilizadorFK,ConteudosFK")] WatchLaters watchLaters)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(watchLaters);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Id", watchLaters.ConteudosFK);
-            ViewData["UtilizadorFK"] = new SelectList(_context.Utilizadores, "Id", "Id", watchLaters.UtilizadorFK);
-            return View(watchLaters);
+            _context.Add(watchLaters);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: WatchLater/Edit/5

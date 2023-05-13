@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xA+Db//B19DrVAxeWNjkf269WOAcoH5uP74Y3NEFeKrOM38faqGKwvb2+nIpz3jgkpzqBxEP8Mb9Yyzw8fFBjA==",
+  "dgSpecHash": "HZztOV/j/2Fsx0126U7VHF3I+bwtPVcBqbooL2ATq73SIkmoiMtTsPTrBtmEAXML/RUHTWYtTIL6/02AFqPvCw==",
   "success": true,
-  "projectFilePath": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
+  "projectFilePath": "/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
   "expectedPackageFiles": [
     "/home/nuttell/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/nuttell/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
@@ -202,7 +202,7 @@
     "/home/nuttell/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
     "/home/nuttell/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/nuttell/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
-    "/home/nuttell/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.3/microsoft.aspnetcore.app.ref.7.0.3.nupkg.sha512"
+    "/home/nuttell/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.4/microsoft.aspnetcore.app.ref.7.0.4.nupkg.sha512"
   ],
   "logs": []
 }

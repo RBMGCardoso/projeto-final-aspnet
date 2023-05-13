@@ -944,3 +944,5 @@ C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/bin/Debug/net
 /home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb
 /home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache
 /home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll
+/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/bin/Debug/net7.0/MySqlConnector.dll
+/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll

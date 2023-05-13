@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
+using NuGet.Protocol;
 using ShowSpot.Models;
 using ShowSpot.Data;
 
@@ -26,7 +28,7 @@ namespace ShowSpot.Controllers
         {
             // Retorna uma lista de 50 os filmes
             var result = _context.Conteudos.Where(c => c.Tipo == false).OrderByDescending(c => c.Id).Take(50);
-            
+
             if (result == null)
                 return new JsonResult(NotFound());
 

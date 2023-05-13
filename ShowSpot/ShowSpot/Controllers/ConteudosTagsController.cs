@@ -49,8 +49,8 @@ namespace ShowSpot.Controllers
         // GET: ConteudosTags/Create
         public IActionResult Create()
         {
-            ViewData["ConteudoFK"] = new SelectList(_context.Conteudos, "Id", "Id");
-            ViewData["TagFK"] = new SelectList(_context.Tags, "Id", "Id");
+            ViewData["ConteudoFK"] = new SelectList(_context.Conteudos, "Id", "Nome");
+            ViewData["TagFK"] = new SelectList(_context.Tags, "Id", "Nome");
             return View();
         }
 
@@ -61,15 +61,10 @@ namespace ShowSpot.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ConteudoFK,TagFK")] ConteudoTags conteudoTags)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(conteudoTags);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["ConteudoFK"] = new SelectList(_context.Conteudos, "Id", "Id", conteudoTags.ConteudoFK);
-            ViewData["TagFK"] = new SelectList(_context.Tags, "Id", "Id", conteudoTags.TagFK);
-            return View(conteudoTags);
+            _context.Add(conteudoTags);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+            
         }
 
         // GET: ConteudosTags/Edit/5
