@@ -5,7 +5,8 @@
     "\\ShowSpot\\ShowSpot",
     "\\ShowSpot\\ShowSpot\\Controllers",
     "\\ShowSpot\\ShowSpot\\Controllers\\API",
-    "\\ShowSpot\\ShowSpot\\Data"
+    "\\ShowSpot\\ShowSpot\\Migrations",
+    "\\ShowSpot\\ShowSpot\\Models"
   ],
   "SelectedNode": "\\ShowSpot\\ShowSpot\\Controllers\\API\\ConteudosAPIController.cs",
   "PreviewInSolutionExplorer": false

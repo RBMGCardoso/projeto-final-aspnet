@@ -8,6 +8,8 @@ using Newtonsoft.Json.Linq;
 using NuGet.Protocol;
 using ShowSpot.Models;
 using ShowSpot.Data;
+using Newtonsoft.Json;
+using System.Dynamic;
 
 namespace ShowSpot.Controllers.API
 {
@@ -27,27 +29,32 @@ namespace ShowSpot.Controllers.API
         public JsonResult GetFilmes()
         {
             // Retorna uma lista de 50 os filmes
-            var result = _context.Conteudos.Where(c => c.Tipo == false).OrderByDescending(c => c.Id).Take(50);
+            //esta query vai buscar cada conteúdo e adiciona no final a tag que corresponda a cada filme
+            var result = _context.Conteudos
+                        .Where(c => c.Tipo == false)
+                        .OrderByDescending(c => c.Id)
+                        .Take(50)
+                        .Select(c => new
+                        {
+                            c.Id,
+                            c.Nome,
+                            c.ImgUrl,
+                            c.Sinopse,
+                            c.Rating,
+                            c.Tipo,
+                            c.Runtime,
+                            Tag = _context.ConteudoTags
+                            .Where(ct => ct.ConteudoFK == c.Id)
+                            .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                            .FirstOrDefault()
+                        });
 
             if (result == null)
                 return new JsonResult(NotFound());
 
-            return new JsonResult(Ok(result));
-        }
-
-        //GET para as series
-        [HttpGet("series")]
-        public JsonResult GetSeries()
-        {
-            // Retorna uma lista de 50 os filmes
-            var result = _context.Conteudos.Where(c => c.Tipo == true).OrderByDescending(c => c.Id).Take(50);
-
-            if (result == null)
-                return new JsonResult(NotFound());
-
-            return new JsonResult(Ok(result));
-        }
-
+            return new JsonResult(result);
+        }    
+        
         // GET ID
         [HttpGet("{id}")]
         public JsonResult Get(int id)
@@ -60,11 +67,41 @@ namespace ShowSpot.Controllers.API
             return new JsonResult(Ok(result));
         }
 
-        //GET para ir buscar as tags dado o id do conteúdo
-        [HttpGet("tags")]
-        public JsonResult GetTags(int id)
+        //GET para as series
+        [HttpGet("series")]
+        public JsonResult GetSeries()
         {
-            var result = _context.ConteudoTags.Where(c => c.ConteudoFK == id).OrderByDescending(c => c.ConteudoFK).Take(50);
+            var result = _context.Conteudos
+                        .Where(c => c.Tipo == true)
+                        .OrderByDescending(c => c.Id)
+                        .Take(50)
+                        .Select(c => new
+                        {
+                            c.Id,
+                            c.Nome,
+                            c.ImgUrl,
+                            c.Sinopse,
+                            c.Rating,
+                            c.Tipo,
+                            c.Runtime,
+                            Tag = _context.ConteudoTags
+                            .Where(ct => ct.ConteudoFK == c.Id)
+                            .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                            .FirstOrDefault()
+                        });
+
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(Ok(result));
+        }
+
+        //GET para ir buscar os nomes das tags
+        [HttpGet("nomeTags")]
+        public JsonResult GetNomeTags()
+        {
+            // Retorna uma lista de 50 os filmes
+            var result = _context.Tags.Take(50);
 
             if (result == null)
                 return new JsonResult(NotFound());
