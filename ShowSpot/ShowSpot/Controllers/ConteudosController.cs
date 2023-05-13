@@ -1,6 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -22,15 +23,9 @@ namespace ShowSpot.Controllers
         // GET: Conteudos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Conteudos.ToListAsync());
-
-        }
-        
-        // GET: Conteudos/Filmes
-        public IActionResult Filmes()
-        {
-            ViewBag.Filmes = _context.Conteudos.ToList();
-            return View();
+              return _context.Conteudos != null ? 
+                          View(await _context.Conteudos.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.Conteudos'  is null.");
         }
 
         // GET: Conteudos/Details/5
@@ -62,14 +57,35 @@ namespace ShowSpot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,ImgUrl,Sinopse,Rating,Tipo")] Conteudos conteudos)
+        public async Task<IActionResult> Create([Bind("Id,Nome,ImgUrl,Sinopse,Rating,Tipo,Runtime")] Conteudos conteudos)
         {
+            string runtimeRegex = "";
+            string errorMessage = "";
+
+            if (conteudos.Tipo)
+            {
+                // x episodes, y seasons
+                runtimeRegex = @"^\d+ episodes, \d+ seasons$";
+                errorMessage = "Runtime should be in the format 'x episodes, y seasons'";
+            }
+            else
+            {
+                runtimeRegex = @"^[1-4]h[0-5]?\d$";
+                errorMessage = "Please insert Runtime like xhy, with x between 1 and 4, and y between 0 and 59";
+            }
+
+            if (string.IsNullOrEmpty(conteudos.Runtime) || !Regex.IsMatch(conteudos.Runtime, runtimeRegex))
+            {
+                ModelState.AddModelError("Runtime", errorMessage);
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(conteudos);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(conteudos);
         }
 
@@ -94,7 +110,7 @@ namespace ShowSpot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ImgUrl,Sinopse,Rating,Tipo")] Conteudos conteudos)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ImgUrl,Sinopse,Rating,Tipo,Runtime")] Conteudos conteudos)
         {
             if (id != conteudos.Id)
             {

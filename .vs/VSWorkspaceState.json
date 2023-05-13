@@ -4,11 +4,9 @@
     "\\ShowSpot",
     "\\ShowSpot\\ShowSpot",
     "\\ShowSpot\\ShowSpot\\Controllers",
-    "\\ShowSpot\\ShowSpot\\Data",
-    "\\ShowSpot\\ShowSpot\\Models",
-    "\\ShowSpot\\ShowSpot\\Views",
-    "\\ShowSpot\\ShowSpot\\Views\\Conteudos"
+    "\\ShowSpot\\ShowSpot\\Controllers\\API",
+    "\\ShowSpot\\ShowSpot\\Data"
   ],
-  "SelectedNode": "\\ShowSpot\\ShowSpot.sln",
+  "SelectedNode": "\\ShowSpot\\ShowSpot\\Controllers\\API\\ConteudosAPIController.cs",
   "PreviewInSolutionExplorer": false
 }
