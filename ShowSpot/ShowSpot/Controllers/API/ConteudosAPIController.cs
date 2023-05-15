@@ -57,11 +57,24 @@ namespace ShowSpot.Controllers.API
         
         // GET Filme por tag
         [HttpGet("filmes/{tag}")]
-        public JsonResult GetFilmeByTag(int tag)
+        public JsonResult GetFilmeByTag(string tag)
         {
             var result = _context.ConteudoTags
-                .Where(ct => ct.TagFK == tag)
-                .Join(_context.Conteudos, ct => ct.ConteudoFK, c => c.Id, (ct,c) => c)
+                .Join(
+                    _context.Tags,
+                    ct => ct.TagFK,
+                    t => t.Id,
+                    (ct, t) => new { ConteudoTag = ct, Tag = t }
+                )
+                .Where(x => x.Tag.Nome == tag)
+                .Select(x => x.ConteudoTag)
+                .ToList()
+                .Join(
+                    _context.Conteudos,
+                    ct => ct.ConteudoFK,
+                    c => c.Id,
+                    (ct, c) => c
+                )
                 .Where(c => c.Tipo == false)
                 .ToList();
             
@@ -131,11 +144,24 @@ namespace ShowSpot.Controllers.API
         
         // GET Filme por tag
         [HttpGet("series/{tag}")]
-        public JsonResult GetSerieByTag(int tag)
+        public JsonResult GetSerieByTag(string tag)
         {
             var result = _context.ConteudoTags
-                .Where(ct => ct.TagFK == tag)
-                .Join(_context.Conteudos, ct => ct.ConteudoFK, c => c.Id, (ct,c) => c)
+                .Join(
+                    _context.Tags,
+                    ct => ct.TagFK,
+                    t => t.Id,
+                    (ct, t) => new { ConteudoTag = ct, Tag = t }
+                )
+                .Where(x => x.Tag.Nome == tag)
+                .Select(x => x.ConteudoTag)
+                .ToList()
+                .Join(
+                    _context.Conteudos,
+                    ct => ct.ConteudoFK,
+                    c => c.Id,
+                    (ct, c) => c
+                )
                 .Where(c => c.Tipo == true)
                 .ToList();
             
