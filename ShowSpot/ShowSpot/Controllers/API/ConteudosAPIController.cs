@@ -52,7 +52,7 @@ namespace ShowSpot.Controllers.API
             if (result == null)
                 return new JsonResult(NotFound());
 
-            return new JsonResult(result);
+            return new JsonResult(Ok(result));
         }    
         
         // GET Filme por tag
@@ -81,7 +81,7 @@ namespace ShowSpot.Controllers.API
             if (result == null)
                 return new JsonResult(NotFound());
 
-            return new JsonResult(result);
+            return new JsonResult(Ok(result));
         }
         
         // GET ID
@@ -168,7 +168,7 @@ namespace ShowSpot.Controllers.API
             if (result == null)
                 return new JsonResult(NotFound());
 
-            return new JsonResult(result);
+            return new JsonResult(Ok(result));
         }
 
         //GET para ir buscar os nomes das tags
