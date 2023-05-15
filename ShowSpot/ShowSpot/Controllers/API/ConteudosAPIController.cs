@@ -29,7 +29,7 @@ namespace ShowSpot.Controllers.API
         public JsonResult GetFilmes()
         {
             // Retorna uma lista de 50 os filmes
-            //esta query vai buscar cada conteúdo e adiciona no final a tag que corresponda a cada filme
+            //esta query vai buscar cada conteï¿½do e adiciona no final a tag que corresponda a cada filme
             var result = _context.Conteudos
                         .Where(c => c.Tipo == false)
                         .OrderByDescending(c => c.Id)
@@ -55,11 +55,44 @@ namespace ShowSpot.Controllers.API
             return new JsonResult(result);
         }    
         
+        // GET Filme por tag
+        [HttpGet("filmes/{tag}")]
+        public JsonResult GetFilmeByTag(int tag)
+        {
+            var result = _context.ConteudoTags
+                .Where(ct => ct.TagFK == tag)
+                .Join(_context.Conteudos, ct => ct.ConteudoFK, c => c.Id, (ct,c) => c)
+                .Where(c => c.Tipo == false)
+                .ToList();
+            
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(result);
+        }
+        
         // GET ID
         [HttpGet("{id}")]
         public JsonResult Get(int id)
         {
-            var result = _context.Conteudos.Find(id);
+            var result = _context.Conteudos
+                .Where(c => c.Id == id)
+                .Take(50)
+                .OrderByDescending(c => c.Id)
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.ImgUrl,
+                    c.Sinopse,
+                    c.Rating,
+                    c.Tipo,
+                    c.Runtime,
+                    Tag = _context.ConteudoTags
+                        .Where(ct => ct.ConteudoFK == c.Id)
+                        .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                        .FirstOrDefault()
+                });;
 
             if (result == null)
                 return new JsonResult(NotFound());
@@ -95,6 +128,22 @@ namespace ShowSpot.Controllers.API
 
             return new JsonResult(Ok(result));
         }
+        
+        // GET Filme por tag
+        [HttpGet("series/{tag}")]
+        public JsonResult GetSerieByTag(int tag)
+        {
+            var result = _context.ConteudoTags
+                .Where(ct => ct.TagFK == tag)
+                .Join(_context.Conteudos, ct => ct.ConteudoFK, c => c.Id, (ct,c) => c)
+                .Where(c => c.Tipo == true)
+                .ToList();
+            
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(result);
+        }
 
         //GET para ir buscar os nomes das tags
         [HttpGet("nomeTags")]
@@ -102,6 +151,24 @@ namespace ShowSpot.Controllers.API
         {
             // Retorna uma lista de 50 os filmes
             var result = _context.Tags.Take(50);
+
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(Ok(result));
+        }
+        
+        //GET para ir buscar os nomes das tags
+        [HttpGet("nomeTags/{id}")]
+        public JsonResult GetNomeTags(int id)
+        {
+            // Retorna uma lista de 50 os filmes
+            var result = _context.Tags.Take(50)
+                .Where(t => t.Id == id)
+                .Select(t => new
+                {
+                    t.Nome,
+                });
 
             if (result == null)
                 return new JsonResult(NotFound());
