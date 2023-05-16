@@ -10,6 +10,11 @@ using ShowSpot.Models;
 using ShowSpot.Data;
 using Newtonsoft.Json;
 using System.Dynamic;
+using Microsoft.AspNetCore.Identity;
+using System.Linq.Expressions;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace ShowSpot.Controllers.API
 {
@@ -18,10 +23,14 @@ namespace ShowSpot.Controllers.API
     public class ConteudosAPIController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
 
-        public ConteudosAPIController(ApplicationDbContext context)
+        public ConteudosAPIController(ApplicationDbContext context, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             _context = context;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         // GET para os filmes
@@ -52,7 +61,7 @@ namespace ShowSpot.Controllers.API
             if (result == null)
                 return new JsonResult(NotFound());
 
-            return new JsonResult(result);
+            return new JsonResult(Ok(result));
         }    
         
         // GET ID
@@ -108,5 +117,72 @@ namespace ShowSpot.Controllers.API
 
             return new JsonResult(Ok(result));
         }
+
+        //GET para efetuar login, recebendo email e password
+        [HttpGet("login/{email}/{password}")]
+        public async Task<ActionResult> login(string email, string password)
+        {
+            IdentityUser user = await _userManager.FindByEmailAsync(email);
+
+            try
+            {
+                if(user != null)
+                {
+                    PasswordVerificationResult passWorks = new PasswordHasher<IdentityUser>().VerifyHashedPassword(null, user.PasswordHash, password);
+                    if (passWorks.Equals(PasswordVerificationResult.Success))
+                    {
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+                    }
+                    else
+                    {
+                        return NotFound();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                return NoContent();
+            }
+
+
+            return Ok(user);
+        }
+
+        [Authorize]
+        //GET apenas para testar o authorize
+        [HttpGet("nomeTagsS")]
+        public JsonResult GetNomeTagsS()
+        {
+            // Retorna uma lista de 50 os filmes
+            var result = _context.Tags.Take(50);
+
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(Ok(result));
+        }
+
+        //GET para receber que user está logado
+        [HttpGet("getUser")]
+        public JsonResult GetUser()
+        {
+            // Retorna uma lista de 50 os filmes
+            var result = User.FindFirstValue(ClaimTypes.Email);
+
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(Ok(result));
+        }
+
+        //GET para fazer logout 
+        [HttpGet("logout")]
+        public async Task logout()
+        {
+            await _signInManager.SignOutAsync();
+        }
+
+
+
     }
 }
