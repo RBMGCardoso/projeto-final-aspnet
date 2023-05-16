@@ -38,7 +38,7 @@ namespace ShowSpot.Controllers.API
         public JsonResult GetFilmes()
         {
             // Retorna uma lista de 50 os filmes
-            //esta query vai buscar cada conte�do e adiciona no final a tag que corresponda a cada filme
+            //esta query vai buscar cada conteï¿½do e adiciona no final a tag que corresponda a cada filme
             var result = _context.Conteudos
                         .Where(c => c.Tipo == false)
                         .OrderByDescending(c => c.Id)
@@ -63,6 +63,35 @@ namespace ShowSpot.Controllers.API
 
             return new JsonResult(Ok(result));
         }    
+        
+        // GET Filme por tag
+        [HttpGet("filmes/{tag}")]
+        public JsonResult GetFilmeByTag(string tag)
+        {
+            var result = _context.ConteudoTags
+                .Join(
+                    _context.Tags,
+                    ct => ct.TagFK,
+                    t => t.Id,
+                    (ct, t) => new { ConteudoTag = ct, Tag = t }
+                )
+                .Where(x => x.Tag.Nome == tag)
+                .Select(x => x.ConteudoTag)
+                .ToList()
+                .Join(
+                    _context.Conteudos,
+                    ct => ct.ConteudoFK,
+                    c => c.Id,
+                    (ct, c) => c
+                )
+                .Where(c => c.Tipo == false)
+                .ToList();
+            
+            if (result == null)
+                return new JsonResult(NotFound());
+
+            return new JsonResult(Ok(result));
+        }
         
         // GET Filme por tag
         [HttpGet("filmes/{tag}")]
@@ -255,7 +284,7 @@ namespace ShowSpot.Controllers.API
             return new JsonResult(Ok(result));
         }
 
-        //GET para receber que user est� logado
+        //GET para receber que user está logado
         [HttpGet("getUser")]
         public JsonResult GetUser()
         {
