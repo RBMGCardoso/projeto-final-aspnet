@@ -210,21 +210,22 @@ namespace ShowSpot.Controllers.API
 
             return new JsonResult(Ok(result));
         }
-        
+
         //GET para efetuar login, recebendo email e password
-        [HttpGet("login/{email}/{password}")]
-        public async Task<ActionResult> login(string email, string password)
+        [HttpPost("login")]
+        public async Task<ActionResult> Login([FromBody] LogInRequest login)
         {
-            IdentityUser user = await _userManager.FindByEmailAsync(email);
+            IdentityUser user = await _userManager.FindByEmailAsync(login.Email);
 
             try
             {
-                if(user != null)
+                if (user != null)
                 {
-                    PasswordVerificationResult passWorks = new PasswordHasher<IdentityUser>().VerifyHashedPassword(null, user.PasswordHash, password);
-                    if (passWorks.Equals(PasswordVerificationResult.Success))
+                    PasswordVerificationResult passwordResult = new PasswordHasher<IdentityUser>().VerifyHashedPassword(null, user.PasswordHash, login.Password);
+                    if (passwordResult.Equals(PasswordVerificationResult.Success))
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
+                        return Ok(user);
                     }
                     else
                     {
@@ -232,13 +233,30 @@ namespace ShowSpot.Controllers.API
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return NoContent();
             }
 
+            return NotFound();
+        }
 
-            return Ok(user);
+
+        [HttpPost("register")]
+        public async Task<ActionResult> Register([FromBody] LogInRequest model)
+        {
+            var user = new IdentityUser { UserName = model.UserName, Email = model.Email };
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (result.Succeeded)
+            {
+                return Ok();
+            }
+            else
+            {
+                // If registration fails, return the errors to the client
+                return BadRequest(result.Errors);
+            }
         }
 
         [Authorize]
