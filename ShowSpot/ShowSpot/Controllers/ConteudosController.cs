@@ -65,13 +65,13 @@ namespace ShowSpot.Controllers
             if (conteudos.Tipo)
             {
                 // x episodes, y seasons
-                runtimeRegex = @"^\d+ episodes, \d+ seasons$";
-                errorMessage = "Runtime should be in the format 'x episodes, y seasons'";
+                runtimeRegex = @"^\d+ episódios, \d+ temporadas$";
+                errorMessage = "Runtime deve de ser 'x episódios, y temporadas'";
             }
             else
             {
                 runtimeRegex = @"^[1-4]h[0-5]?\d$";
-                errorMessage = "Please insert Runtime like xhy, with x between 1 and 4, and y between 0 and 59";
+                errorMessage = "Runtime deve de ser algo como xhy, com x entre 1 e 4, e y entre 0 e 59";
             }
 
             if (string.IsNullOrEmpty(conteudos.Runtime) || !Regex.IsMatch(conteudos.Runtime, runtimeRegex))

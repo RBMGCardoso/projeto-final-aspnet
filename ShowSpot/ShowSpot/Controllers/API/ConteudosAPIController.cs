@@ -81,6 +81,7 @@ namespace ShowSpot.Controllers.API
                     c.Rating,
                     c.Tipo,
                     c.Runtime,
+                    c.AnoLancamento,
                     Tag = _context.ConteudoTags
                         .Where(ct => ct.ConteudoFK == c.Id)
                         .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
@@ -139,6 +140,7 @@ namespace ShowSpot.Controllers.API
                             c.Rating,
                             c.Tipo,
                             c.Runtime,
+                            c.AnoLancamento,
                             Tag = _context.ConteudoTags
                             .Where(ct => ct.ConteudoFK == c.Id)
                             .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
@@ -278,7 +280,7 @@ namespace ShowSpot.Controllers.API
         public JsonResult GetUser()
         {
             // Retorna uma lista de 50 os filmes
-            var result = User.FindFirstValue(ClaimTypes.Email);
+            var result = User.FindFirstValue(ClaimTypes.Name);
 
             if (result == null)
                 return new JsonResult(NotFound());
