@@ -17,4 +17,6 @@ public class Conteudos
 
     [RegularExpression(@"^\d{4}$", ErrorMessage = "Por favor introduza um ano válido")]
     public string AnoLancamento { get; set; }
+
+    public string LinkTrailer { get; set; }
 }
