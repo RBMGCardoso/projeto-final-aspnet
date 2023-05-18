@@ -50,6 +50,7 @@ namespace ShowSpot.Controllers.API
                     c.Rating,
                     c.Tipo,
                     c.Runtime,
+                    c.AnoLancamento,
                     Tag = _context.ConteudoTags
                         .Where(ct => ct.ConteudoFK == c.Id)
                         .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
