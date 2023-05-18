@@ -276,33 +276,6 @@ namespace ShowSpot.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Recomendados",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    UtilizadorFK = table.Column<int>(type: "int", nullable: false),
-                    ConteudosFK = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Recomendados", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Recomendados_Conteudos_ConteudosFK",
-                        column: x => x.ConteudosFK,
-                        principalTable: "Conteudos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Recomendados_Utilizadores_UtilizadorFK",
-                        column: x => x.UtilizadorFK,
-                        principalTable: "Utilizadores",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
                 name: "WatchLaters",
                 columns: table => new
                 {
@@ -375,17 +348,7 @@ namespace ShowSpot.Migrations
                 name: "IX_ConteudoTags_TagFK",
                 table: "ConteudoTags",
                 column: "TagFK");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Recomendados_ConteudosFK",
-                table: "Recomendados",
-                column: "ConteudosFK");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Recomendados_UtilizadorFK",
-                table: "Recomendados",
-                column: "UtilizadorFK");
-
+            
             migrationBuilder.CreateIndex(
                 name: "IX_WatchLaters_ConteudosFK",
                 table: "WatchLaters",
