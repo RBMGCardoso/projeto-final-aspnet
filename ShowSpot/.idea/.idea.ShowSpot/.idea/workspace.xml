@@ -4,25 +4,50 @@
     <projectFile profileName="http">ShowSpot/ShowSpot.csproj</projectFile>
     <projectFile profileName="https">ShowSpot/ShowSpot.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1c7dd5-48fd-482f-837c-98abb6395488" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ShowSpot/Models/Favoritos.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/efCoreDialogsState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/efCoreDialogsState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosTagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosTagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/FilmesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/FilmesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/RecomendadosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/RecomendadosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230509092456_incial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230509092456_incial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/RecomendadosController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/UtilizadoresController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230513105921_whyEmpty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Migrations/20230513105921_whyEmpty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230516081815_Identity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Migrations/20230516081815_Identity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230517100153_AnoLancamento.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Migrations/20230517100153_AnoLancamento.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230518134948_LinkTrailer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Migrations/20230518134948_LinkTrailer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Models/Recomendados.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Models/Utilizadores.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Models/WatchLaters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Models/WatchLaters.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/ShowSpot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/ShowSpot.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/ConteudosTags/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/ConteudosTags/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Recomendados/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Utilizadores/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Utilizadores/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Utilizadores/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Utilizadores/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Utilizadores/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/WatchLater/Index.cshtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -36,9 +61,11 @@
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShowSpot.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShowSpot.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShowSpot.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShowSpot.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" afterDir="false" />
@@ -49,35 +76,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Controllers/API/ConteudosAPIController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShowSpot/Models/ConteudoTags.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2PKVjACXnzX6ZI2N8wptVKqkhKu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Migrations",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/home/nuttell/.config/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
-      &quot;/home/nuttell/.config/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
-      &quot;/home/nuttell/.local/share/Symbols/src&quot;
+    "rider.external.source.directories": [
+      "/home/nuttell/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/home/nuttell/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/home/nuttell/.local/share/Symbols/src"
     ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ShowSpot: http">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.ShowSpot: https">
     <configuration name="ShowSpot: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ShowSpot/ShowSpot.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -120,10 +162,18 @@
       <workItem from="1683205893607" duration="354000" />
       <workItem from="1683206265573" duration="3318000" />
       <workItem from="1683209596267" duration="6025000" />
-      <workItem from="1683802321661" duration="708000" />
-      <workItem from="1683803048775" duration="120000" />
-      <workItem from="1683803186374" duration="767000" />
-      <workItem from="1683803970705" duration="2737000" />
+      <workItem from="1683713837699" duration="234000" />
+      <workItem from="1683714087361" duration="244000" />
+      <workItem from="1683714345567" duration="23000" />
+      <workItem from="1683714394660" duration="250000" />
+      <workItem from="1683714658844" duration="54000" />
+      <workItem from="1683714730501" duration="67000" />
+      <workItem from="1683715544881" duration="92000" />
+      <workItem from="1683715688415" duration="135000" />
+      <workItem from="1683716071340" duration="6984000" />
+      <workItem from="1683723254817" duration="6167000" />
+      <workItem from="1684162987036" duration="3650000" />
+      <workItem from="1684431283685" duration="7791000" />
     </task>
     <task id="LOCAL-00001" summary="Fundação do projeto: Base de dados, Views básicas, Modelos">
       <created>1683215342925</created>
@@ -139,7 +189,35 @@
       <option name="project" value="LOCAL" />
       <updated>1683215600067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="API retorna filmes, Página de filmes iniciada">
+      <created>1683724653541</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683724653541</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Filtração de filmes/séries utilizando o id da tag, o get geral que retorna todos os conteudos por id agora retorna o nome da tag">
+      <created>1684154234472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684154234472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Correção para permitir filtrar filmes/séries utilizando o nome da tag ao invés do id">
+      <created>1684156089978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684156089978</updated>
+    </task>
+    <task id="LOCAL-00006" summary="OK(result) fix">
+      <created>1684171080984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684171080984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +225,13 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Abstractions" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Relational" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Extensions.Logging" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -162,6 +247,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Fundação do projeto: Base de dados, Views básicas, Modelos" />
     <MESSAGE value="Whoops" />
-    <option name="LAST_COMMIT_MESSAGE" value="Whoops" />
+    <MESSAGE value="API retorna filmes, Página de filmes iniciada" />
+    <MESSAGE value="Filtração de filmes/séries utilizando o id da tag, o get geral que retorna todos os conteudos por id agora retorna o nome da tag" />
+    <MESSAGE value="Correção para permitir filtrar filmes/séries utilizando o nome da tag ao invés do id" />
+    <MESSAGE value="OK(result) fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="OK(result) fix" />
   </component>
 </project>

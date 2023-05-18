@@ -9,165 +9,145 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShowSpot
 build_property.RootNamespace = ShowSpot
-build_property.ProjectDir = C:\Users\rodri\source\repos\projeto-final-aspnet\ShowSpot\ShowSpot\
+build_property.ProjectDir = /home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rodri\source\repos\projeto-final-aspnet\ShowSpot\ShowSpot
+build_property.MSBuildProjectDirectory = /home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zVGFnc1xDcmVhdGUuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zVGFnc1xEZWxldGUuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zVGFnc1xEZXRhaWxzLmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zVGFnc1xFZGl0LmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zVGFnc1xJbmRleC5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXENyZWF0ZS5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zVGFncy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXERlbGV0ZS5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zVGFncy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXERldGFpbHMuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zVGFncy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXEVkaXQuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zVGFncy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXEluZGV4LmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGV1ZG9zVGFncy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmF2b3JpdG9zL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmF2b3JpdG9zL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXENyZWF0ZS5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmF2b3JpdG9zL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXERlbGV0ZS5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmF2b3JpdG9zL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXERldGFpbHMuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmF2b3JpdG9zL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXEVkaXQuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXEluZGV4LmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnc1xDcmVhdGUuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFncy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnc1xEZWxldGUuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFncy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnc1xEZXRhaWxzLmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFncy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnc1xFZGl0LmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFncy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnc1xJbmRleC5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFncy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXENyZWF0ZS5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2F0Y2hMYXRlci9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERlbGV0ZS5jc2h0bWw=
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2F0Y2hMYXRlci9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERldGFpbHMuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2F0Y2hMYXRlci9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEVkaXQuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2F0Y2hMYXRlci9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEluZGV4LmNzaHRtbA==
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2F0Y2hMYXRlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2F0Y2hMYXRlclxDcmVhdGUuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2F0Y2hMYXRlclxEZWxldGUuY3NodG1s
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2F0Y2hMYXRlclxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2F0Y2hMYXRlclxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2F0Y2hMYXRlclxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-izr5378m2w
+[/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x67nuezebr

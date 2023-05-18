@@ -29,4 +29,27 @@
       <Folder Include="Migrations\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Recomendados\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recomendados\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recomendados\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recomendados\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recomendados\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favoritos\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favoritos\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favoritos\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favoritos\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Favoritos\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Utilizadores\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Utilizadores\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Utilizadores\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Utilizadores\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Utilizadores\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WatchLater\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WatchLater\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WatchLater\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WatchLater\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\WatchLater\Index.cshtml" />
+    </ItemGroup>
+
 </Project>
