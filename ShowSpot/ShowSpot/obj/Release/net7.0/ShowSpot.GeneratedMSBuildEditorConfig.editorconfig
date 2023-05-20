@@ -60,32 +60,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Recomendados/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21lbmRhZG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/Error.cshtml]
@@ -118,26 +118,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Tags/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Utilizadores/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YWRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/WatchLater/Create.cshtml]

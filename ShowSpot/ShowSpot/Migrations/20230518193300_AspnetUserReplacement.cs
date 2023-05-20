@@ -11,13 +11,7 @@ namespace ShowSpot.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Favoritos_Utilizadores_UtilizadorFK",
-                table: "Favoritos");
 
-            migrationBuilder.DropForeignKey(
-                name: "FK_WatchLaters_Utilizadores_UtilizadorFK",
-                table: "WatchLaters");
 
             migrationBuilder.DropTable(
                 name: "Utilizadores");

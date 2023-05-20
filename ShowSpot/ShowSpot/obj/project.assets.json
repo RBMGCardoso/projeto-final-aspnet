@@ -11454,24 +11454,26 @@
     ]
   },
   "packageFolders": {
-    "/home/nuttell/.nuget/packages/": {}
+    "C:\\Users\\rodri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj",
       "projectName": "ShowSpot",
-      "projectPath": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
-      "packagesPath": "/home/nuttell/.nuget/packages/",
-      "outputPath": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/obj/",
+      "projectPath": "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\ShowSpot.csproj",
+      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rodri\\source\\repos\\projeto-final-aspnet\\ShowSpot\\ShowSpot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/nuttell/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11536,12 +11538,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.3, 7.0.3]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11550,7 +11546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
