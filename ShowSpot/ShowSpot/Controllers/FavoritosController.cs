@@ -61,15 +61,9 @@ namespace ShowSpot.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UserFK,ConteudosFK")] Favoritos favoritos)
         {
-            if (ModelState.IsValid)
-            {
                 _context.Add(favoritos);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome", favoritos.ConteudosFK);
-            ViewData["UserFK"] = new SelectList(_context.Users, "Id", "UserName", favoritos.UserFK);
-            return View(favoritos);
         }
 
         // GET: Favoritos/Edit/5

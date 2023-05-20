@@ -15,6 +15,7 @@ using System.Linq.Expressions;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 
 namespace ShowSpot.Controllers.API
 {
@@ -298,6 +299,31 @@ namespace ShowSpot.Controllers.API
         {
             await _signInManager.SignOutAsync();
         }
-        
+
+        // Retorna os recomendados para um user dado o id do user
+        [HttpGet("recomendados/{id}")]
+        async public Task<JsonResult> GetRecomendados(int id)
+        {
+            // Retorna as tags(nome) de todos os favoritos do utilizador
+            var userFavs =
+                _context.Favoritos.Where(f => f.UserFK == id.ToString())
+                    .Select(f => new
+                    {
+                        f.ConteudosFK
+                    })
+                    .Join(_context.ConteudoTags, c => c.ConteudosFK, t => t.ConteudoFK, (c, t) => t.TagFK);
+
+            var recomendados = new List<object>();
+            var excluded = _context.Favoritos.Select(f => f.ConteudosFK).AsEnumerable();
+            
+            foreach (var favTag in userFavs)
+            {
+                var query = _context.ConteudoTags.Where(t => t.TagFK == favTag).Select(c => c.ConteudoFK).AsEnumerable().OrderDescending().Except(excluded).Take(1);
+                
+                recomendados.Add(query);
+            }
+            
+            return new JsonResult(Ok(recomendados));
+        }
     }
 }
