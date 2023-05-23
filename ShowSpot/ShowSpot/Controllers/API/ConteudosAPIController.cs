@@ -303,11 +303,11 @@ namespace ShowSpot.Controllers.API
 
         // Retorna os recomendados para um user dado o id do user
         [HttpGet("recomendados/{id}")]
-        async public Task<JsonResult> GetRecomendados(int id)
+        async public Task<JsonResult> GetRecomendados(string id)
         {
             // Retorna as tags(nome) de todos os favoritos do utilizador
             var userFavs =
-                _context.Favoritos.Where(f => f.UserFK == id.ToString())
+                _context.Favoritos.Where(f => f.UserFK == id)
                     .Select(f => new
                     {
                         f.ConteudosFK
@@ -326,26 +326,30 @@ namespace ShowSpot.Controllers.API
             
             return new JsonResult(Ok(recomendados));
         }
+
         [HttpPost("addFavorito")]
-        protected void Page_Load(object sender, EventArgs e)
+        async public Task<IActionResult> AddFavorito()
         {
-            if (Request.Method == "POST") // Check if it's a POST request
+
+            if (Request.Method == "POST")
             {
                 string idFilme = Request.Form["idFilme"];
                 string username = Request.Form["username"];
+                var user = await _userManager.FindByNameAsync(username);
 
-                string id = _userManager.FindByNameAsync(username).Id.ToString();
-                
                 Favoritos fav = new Favoritos
                 {
                     ConteudosFK = Convert.ToInt32(idFilme),
-                    UserFK = id
+                    UserFK = user.Id
                 };
 
                 _context.Favoritos.Add(fav);
                 _context.SaveChanges();
-            }
-        }
 
+                return Ok(); // Devolve sucesso
+            }
+
+            return BadRequest(); // devolve uma má resposta
+        }
     }
 }
