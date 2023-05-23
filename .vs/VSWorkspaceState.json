@@ -9,6 +9,6 @@
     "\\ShowSpot\\ShowSpot\\Migrations",
     "\\ShowSpot\\ShowSpot\\Models"
   ],
-  "SelectedNode": "\\ShowSpot\\ShowSpot\\Migrations\\20230518193300_AspnetUserReplacement.cs",
+  "SelectedNode": "\\ShowSpot\\ShowSpot\\Controllers\\API\\ConteudosAPIController.cs",
   "PreviewInSolutionExplorer": false
 }
