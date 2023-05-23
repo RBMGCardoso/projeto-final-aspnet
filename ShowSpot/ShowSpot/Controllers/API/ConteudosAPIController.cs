@@ -15,6 +15,7 @@ using System.Linq.Expressions;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange;
 using Microsoft.EntityFrameworkCore;
 
 namespace ShowSpot.Controllers.API
@@ -264,6 +265,7 @@ namespace ShowSpot.Controllers.API
                 // If registration fails, return the errors to the client
                 return BadRequest(result.Errors);
             }
+            
         }
 
         [Authorize]
@@ -284,7 +286,6 @@ namespace ShowSpot.Controllers.API
         [HttpGet("getUser")]
         public JsonResult GetUser()
         {
-            // Retorna uma lista de 50 os filmes
             var result = User.FindFirstValue(ClaimTypes.Name);
 
             if (result == null)
@@ -325,5 +326,26 @@ namespace ShowSpot.Controllers.API
             
             return new JsonResult(Ok(recomendados));
         }
+        [HttpPost("addFavorito")]
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Request.Method == "POST") // Check if it's a POST request
+            {
+                string idFilme = Request.Form["idFilme"];
+                string username = Request.Form["username"];
+
+                string id = _userManager.FindByNameAsync(username).Id.ToString();
+                
+                Favoritos fav = new Favoritos
+                {
+                    ConteudosFK = Convert.ToInt32(idFilme),
+                    UserFK = id
+                };
+
+                _context.Favoritos.Add(fav);
+                _context.SaveChanges();
+            }
+        }
+
     }
 }
