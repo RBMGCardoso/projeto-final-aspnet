@@ -302,12 +302,14 @@ namespace ShowSpot.Controllers.API
         }
 
         // Retorna os recomendados para um user dado o id do user
-        [HttpGet("recomendados/{id}")]
-        async public Task<JsonResult> GetRecomendados(string id)
+        [HttpGet("recomendados/{nome}")]
+        async public Task<JsonResult> GetRecomendados(string nome)
         {
+            var user = await _userManager.FindByNameAsync(nome);
+            
             // Retorna as tags(nome) de todos os favoritos do utilizador
             var userFavs =
-                _context.Favoritos.Where(f => f.UserFK == id)
+                _context.Favoritos.Where(f => f.UserFK.ToString() == user.Id)
                     .Select(f => new
                     {
                         f.ConteudosFK
