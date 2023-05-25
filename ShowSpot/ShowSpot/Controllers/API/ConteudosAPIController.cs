@@ -17,6 +17,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Common;
 
 namespace ShowSpot.Controllers.API
 {
@@ -357,6 +358,23 @@ namespace ShowSpot.Controllers.API
             }
 
             return BadRequest(); // devolve uma má resposta
+        }
+
+
+        [HttpPut("passwordChange")]
+        async public Task<IActionResult> PasswordChange()
+        {
+            if(Request.Method == "PUT")
+            {
+                string username = Request.Form["username"];
+                string newPassword = Request.Form["password"];
+                var user = await _userManager.FindByNameAsync(username);
+
+                string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+                IdentityResult passwordChangeResult = await _userManager.ResetPasswordAsync(user, resetToken, newPassword);
+                return Ok(passwordChangeResult);
+            }
+            return BadRequest();
         }
     }
 }
