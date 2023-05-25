@@ -323,12 +323,24 @@ namespace ShowSpot.Controllers.API
 
             var recomendados = new List<object>();
             var excluded = _context.Favoritos.Select(f => f.ConteudosFK).AsEnumerable();
-            
-            foreach (var favTag in userFavs)
+
+            try
             {
-                var query = _context.ConteudoTags.Where(t => t.TagFK == favTag).Select(c => c.ConteudoFK).AsEnumerable().OrderDescending().Except(excluded).Take(1);
+                foreach (var favTag in userFavs)
+                {
+                    var query = _context.ConteudoTags.Where(t => t.TagFK == favTag).Select(c => c.ConteudoFK).AsEnumerable().OrderDescending().Except(excluded).Take(1);
                 
-                recomendados.Add(query);
+                    recomendados.Add(query);
+                }
+            }
+            catch (Exception e)
+            {
+                return new JsonResult(NotFound());
+            }
+
+            if (!recomendados.Any())
+            {
+                return new JsonResult(NotFound());
             }
             
             return new JsonResult(Ok(recomendados));
