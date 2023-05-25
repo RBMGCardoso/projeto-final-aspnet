@@ -350,7 +350,6 @@ namespace ShowSpot.Controllers.API
         [HttpPost("addFavorito")]
         async public Task<IActionResult> AddFavorito()
         {
-
             if (Request.Method == "POST")
             {
                 string idFilme = Request.Form["idFilme"];
@@ -363,7 +362,20 @@ namespace ShowSpot.Controllers.API
                     UserFK = user.Id
                 };
 
-                _context.Favoritos.Add(fav);
+                var query = _context.Favoritos.Where(u =>
+                    u.UserFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)).FirstOrDefaultAsync();
+
+
+                if (query.Result == null)
+                {
+                    _context.Favoritos.Add(fav);
+                }
+                else
+                {
+                    _context.Favoritos.Remove(_context.Favoritos.Single(u =>
+                        u.UserFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)));
+                }
+                
                 _context.SaveChanges();
 
                 return Ok(); // Devolve sucesso
