@@ -19,12 +19,19 @@ using Microsoft.DotNet.Scaffolding.Shared.CodeModifier.CodeChange;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Common;
 
+/*
+ * Classe que representa a API utilizada na aplicação em React. Aqui estão todas as funções utilizadas na aplicação de React.
+ */
 namespace ShowSpot.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ConteudosAPIController : ControllerBase
     {
+        /*
+         * Estes atributos permitem o manuseamento de dados na BD. Permitem o acesso ao context (base de dados) e a utilização 
+         * das tabelas de utilizadores fornecidas pelo ASP.NET.
+         */
         private readonly ApplicationDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -36,7 +43,7 @@ namespace ShowSpot.Controllers.API
             _signInManager = signInManager;
         }
         
-        // GET ID
+        // GET conteúdo dado o ID
         [HttpGet("conteudo/{id}")]
         public JsonResult Get(int id)
         {
@@ -224,12 +231,17 @@ namespace ShowSpot.Controllers.API
         [HttpPost("login")]
         public async Task<ActionResult> Login([FromBody] LogInRequest login)
         {
+            //procura na BD o utilizador com o email fornecido
             IdentityUser user = await _userManager.FindByEmailAsync(login.Email);
 
             try
             {
                 if (user != null)
                 {
+                    /*
+                    * se a password fornecida no pedido for igual à password que está na BD e essa password corresponder ao user que está a tentar logar,
+                    * é validado o login.
+                    */
                     PasswordVerificationResult passwordResult = new PasswordHasher<IdentityUser>().VerifyHashedPassword(null, user.PasswordHash, login.Password);
                     if (passwordResult.Equals(PasswordVerificationResult.Success))
                     {
@@ -250,7 +262,7 @@ namespace ShowSpot.Controllers.API
             return NotFound();
         }
 
-
+        //POST para efetuar o registo de um utilizador no servidor. Utiliza a classe LogInRequest para processar o registo.
         [HttpPost("register")]
         public async Task<ActionResult> Register([FromBody] LogInRequest model)
         {
@@ -347,6 +359,7 @@ namespace ShowSpot.Controllers.API
             return new JsonResult(Ok(recomendados));
         }
 
+        //permite marcar um conteúdo como favorito para o utilizador logado no servidor.
         [HttpPost("addFavorito")]
         async public Task<IActionResult> AddFavorito()
         {
@@ -384,21 +397,42 @@ namespace ShowSpot.Controllers.API
             return BadRequest(); // devolve uma má resposta
         }
 
-
+        //função que permite a alteração da palavra-passe de um utilizador. 
         [HttpPut("passwordChange")]
-        async public Task<IActionResult> PasswordChange()
+        async public Task<IActionResult> PasswordChange(PasswordChangeRequest model)
         {
-            if(Request.Method == "PUT")
-            {
-                string username = Request.Form["username"];
-                string newPassword = Request.Form["password"];
-                var user = await _userManager.FindByNameAsync(username);
+            //verifica a existencia do utilizador na DB
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == model.Username);
 
-                string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
-                IdentityResult passwordChangeResult = await _userManager.ResetPasswordAsync(user, resetToken, newPassword);
-                return Ok(passwordChangeResult);
+            if(user == null)
+            {
+                return NotFound();
             }
-            return BadRequest();
+
+            // Verifica se a password existente é igual à password fornecida
+            var isSamePassword = await _userManager.CheckPasswordAsync(user, model.Password);
+
+            if (isSamePassword)
+            {
+                return BadRequest("A nova password é igual à antiga");
+            }
+
+            //define um novo hash para a password do utilizador
+            var newPasswordHash = _userManager.PasswordHasher.HashPassword(user, model.Password);
+
+            user.PasswordHash = newPasswordHash;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+                //sucesso
+                return Ok();
+            }
+            else
+            {
+                return BadRequest(result.Errors);
+            }
         }
     }
 }
