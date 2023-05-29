@@ -434,5 +434,43 @@ namespace ShowSpot.Controllers.API
                 return BadRequest(result.Errors);
             }
         }
+
+        //permite marcar um conteúdo para ver mais tarde para o utilizador logado no servidor.
+        [HttpPost("addWatchLater")]
+        async public Task<IActionResult> AddWatchLater()
+        {
+            if (Request.Method == "POST")
+            {
+                string idFilme = Request.Form["idFilme"];
+                string username = Request.Form["username"];
+                var user = await _userManager.FindByNameAsync(username);
+
+                WatchLaters wL = new WatchLaters
+                {
+                    ConteudosFK = Convert.ToInt32(idFilme),
+                    UtilizadorFK = user.Id
+                };
+
+                var query = _context.WatchLaters.Where(u =>
+                    u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)).FirstOrDefaultAsync();
+
+
+                if (query.Result == null)
+                {
+                    _context.WatchLaters.Add(wL);
+                }
+                else
+                {
+                    _context.WatchLaters.Remove(_context.WatchLaters.Single(u =>
+                        u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)));
+                }
+
+                _context.SaveChanges();
+
+                return Ok(); // Devolve sucesso
+            }
+
+            return BadRequest(); // devolve uma má resposta
+        }
     }
 }
