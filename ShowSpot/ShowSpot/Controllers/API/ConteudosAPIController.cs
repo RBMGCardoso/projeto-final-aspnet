@@ -361,7 +361,7 @@ namespace ShowSpot.Controllers.API
 
         //permite marcar um conteúdo como favorito para o utilizador logado no servidor.
         [HttpPost("addFavorito")]
-        async public Task<IActionResult> AddFavorito()
+        async public Task<JsonResult> AddFavorito()
         {
             if (Request.Method == "POST")
             {
@@ -382,19 +382,62 @@ namespace ShowSpot.Controllers.API
                 if (query.Result == null)
                 {
                     _context.Favoritos.Add(fav);
+                    _context.SaveChanges();
+                    return new JsonResult(Ok("Add")); // Devolve sucesso // Devolve sucesso
                 }
                 else
                 {
                     _context.Favoritos.Remove(_context.Favoritos.Single(u =>
                         u.UserFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)));
+                    _context.SaveChanges();
+                    return new JsonResult(Ok("Remove")); // Devolve sucesso // Devolve sucesso
+                    
                 }
-                
-                _context.SaveChanges();
-
-                return Ok(); // Devolve sucesso
             }
 
-            return BadRequest(); // devolve uma má resposta
+            return new JsonResult(BadRequest()); // devolve uma má resposta
+        }
+        
+        //permite marcar um conteúdo para ver mais tarde para o utilizador logado no servidor.
+        [HttpPost("addWatchLater")]
+        async public Task<JsonResult> AddWatchLater()
+        {
+            if (Request.Method == "POST")
+            {
+                string idFilme = Request.Form["idFilme"];
+                string username = Request.Form["username"];
+                var user = await _userManager.FindByNameAsync(username);
+
+                WatchLaters wL = new WatchLaters
+                {
+                    ConteudosFK = Convert.ToInt32(idFilme),
+                    UtilizadorFK = user.Id
+                };
+
+                var query = _context.WatchLaters.Where(u =>
+                    u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)).FirstOrDefaultAsync();
+
+
+                if (query.Result == null)
+                {
+                    _context.WatchLaters.Add(wL);
+                    _context.SaveChanges();
+                    return new JsonResult(Ok("Add")); // Devolve sucesso
+                }
+                else
+                {
+                    _context.WatchLaters.Remove(_context.WatchLaters.Single(u =>
+                        u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)));
+                    _context.SaveChanges();
+                    return new JsonResult(Ok("Remove")); // Devolve sucesso
+                }
+
+                
+
+                
+            }
+
+            return new JsonResult(BadRequest()); // devolve uma má resposta
         }
 
         //função que permite a alteração da palavra-passe de um utilizador. 
@@ -434,43 +477,42 @@ namespace ShowSpot.Controllers.API
                 return BadRequest(result.Errors);
             }
         }
+        
 
-        //permite marcar um conteúdo para ver mais tarde para o utilizador logado no servidor.
-        [HttpPost("addWatchLater")]
-        async public Task<IActionResult> AddWatchLater()
+        [HttpGet("getFavoritos/{nome}")]
+        public JsonResult getFavorito(string nome)
         {
-            if (Request.Method == "POST")
+            var user = _context.Users.Where(u => u.UserName == nome).Take(1).ToList();
+
+            if (user == null)
             {
-                string idFilme = Request.Form["idFilme"];
-                string username = Request.Form["username"];
-                var user = await _userManager.FindByNameAsync(username);
-
-                WatchLaters wL = new WatchLaters
-                {
-                    ConteudosFK = Convert.ToInt32(idFilme),
-                    UtilizadorFK = user.Id
-                };
-
-                var query = _context.WatchLaters.Where(u =>
-                    u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)).FirstOrDefaultAsync();
-
-
-                if (query.Result == null)
-                {
-                    _context.WatchLaters.Add(wL);
-                }
-                else
-                {
-                    _context.WatchLaters.Remove(_context.WatchLaters.Single(u =>
-                        u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idFilme)));
-                }
-
-                _context.SaveChanges();
-
-                return Ok(); // Devolve sucesso
+                return new JsonResult(NotFound());
             }
 
-            return BadRequest(); // devolve uma má resposta
+            var userFavs =
+                _context.Favoritos.Where(f => f.UserFK == user[0].Id)
+                    .Select(f => f.ConteudosFK).ToList();
+            
+            
+            return new JsonResult(Ok(userFavs));
+        }
+        
+        [HttpGet("getWatchLaters/{nome}")]
+        public JsonResult getWatchLaters(string nome)
+        {
+            var user = _context.Users.Where(u => u.UserName == nome).Take(1).ToList();
+
+            if (user == null)
+            {
+                return new JsonResult(NotFound());
+            }
+
+            var userFavs =
+                _context.WatchLaters.Where(f => f.UtilizadorFK == user[0].Id)
+                    .Select(f => f.ConteudosFK).ToList();
+            
+            
+            return new JsonResult(Ok(userFavs));
         }
     }
 }
