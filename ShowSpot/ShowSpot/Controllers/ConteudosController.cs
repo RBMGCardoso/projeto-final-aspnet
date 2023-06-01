@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using ShowSpot.Data;
 using ShowSpot.Models;
 
@@ -36,8 +37,33 @@ namespace ShowSpot.Controllers
 
         public IActionResult VistaFilmes()
         {
-            var conteudos = ConteudosList();
-            return View(conteudos);
+            var result = _context.Conteudos
+                .Where(c => c.Tipo == false)
+                .OrderByDescending(c => c.Id)
+                .Take(50)
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.ImgUrl,
+                    c.Sinopse,
+                    c.Rating,
+                    c.Tipo,
+                    c.Runtime,
+                    c.AnoLancamento,
+                    c.LinkTrailer,
+                    Tag = _context.ConteudoTags
+                        .Where(ct => ct.ConteudoFK == c.Id)
+                        .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                        .FirstOrDefault()
+                });
+
+            var tags = _context.Tags.Select(t => t.Nome);
+
+            ViewBag.Filmes = JsonConvert.SerializeObject(result);
+            ViewBag.Tags = JsonConvert.SerializeObject(tags);
+
+            return View();
         }
 
         public IActionResult VistaSeries()

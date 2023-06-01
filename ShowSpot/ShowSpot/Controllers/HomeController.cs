@@ -40,16 +40,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Filmes()
-    {
-        return View();
-    }
-
-    public IActionResult Series()
-    {
-        return View();
-    }
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
