@@ -8,6 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Views\Conteudos\Filmes.cshtml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Views\Conteudos\Filmes.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
         <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
     </ItemGroup>
 

@@ -1,0 +1,58 @@
+﻿.filmeHref {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none !important;
+    color: #fff
+}
+
+.filmeHref:hover {
+    text-decoration: none !important;
+    color: #fff
+}
+
+.filmeHref:active {
+    background-color: transparent !important;
+}
+
+.filmeCard:hover .filmes {
+    animation-name: de-saturate;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.filmeCard {
+    position: relative;
+}
+
+.filmes {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 5%;
+    filter: drop-shadow(3px 7px 5px #000);
+    filter: saturate(0%);
+}
+
+.filme-overlay {
+    position: absolute;
+    user-select: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100% !important;
+    width: 100% !important;
+    opacity: 0;
+    visibility: none;
+    transition: .5s ease;
+    background: linear-gradient(315deg, rgba(57,56,57,0.8) 49%, rgba(57,56,57,0.8) 50%, rgba(80,80,80,0.6544818611038166) 51%, rgba(80,80,80,0.65) 100%);
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.filmeCard:hover .filme-overlay {
+    opacity: 1;
+}
