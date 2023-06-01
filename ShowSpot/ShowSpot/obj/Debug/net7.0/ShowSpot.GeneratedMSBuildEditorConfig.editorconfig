@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/ConteudosTags/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zVGFnc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +62,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/VistaFilmes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXFZpc3RhRmlsbWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Conteudos/VistaSeries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGV1ZG9zXFZpc3RhU2VyaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Create.cshtml]

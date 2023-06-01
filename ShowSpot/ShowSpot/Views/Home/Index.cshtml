@@ -1,92 +1,30 @@
-﻿
-@model IEnumerable<ShowSpot.Models.Conteudos>
+﻿@model IEnumerable<ShowSpot.Models.Conteudos>
 @{
     ViewData["Title"] = "Home";
 }
-<script>
-    // Utilização da API criada para React
-    fetch('/api/ConteudosAPI/filmes')
-        .then(response => response.json())
-        .then(data => {
-            updateHTML(data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-
-    function updateHTML(data) {
-        const mainDiv = document.querySelector('.main-div');
-
-        //adiciona link para a stylesheet
-        const styleLink = document.createElement('link');
-        styleLink.rel = 'stylesheet';
-        styleLink.href = '~/css/style.css';
-        mainDiv.appendChild(styleLink);
-
-        //cria uma seccao de filme recentes chamada HotMovies
-        const hotMoviesSection = document.createElement('div');
-        hotMoviesSection.className = 'row pt-4';
-        mainDiv.appendChild(hotMoviesSection);
-
-        const hotMoviesTitle = document.createElement('h1');
-        hotMoviesTitle.textContent = 'Hot Movies';
-        hotMoviesSection.appendChild(hotMoviesTitle);
-
-        const hotMoviesContainer = document.createElement('div');
-        hotMoviesContainer.className = 'd-flex justify-content-center';
-        hotMoviesSection.appendChild(hotMoviesContainer);
-
-        //Para cada filme na const data, retira os que foram lançados em 2022 ou posteriormente.
-        data.forEach(conteudo => {
-            if (conteudo.Tipo === false && parseInt(conteudo.AnoLancamento) >= 2022) {
-                const movieLink = document.createElement('a');
-                movieLink.className = 'filmeHref';
-                movieLink.href = '/Conteudos/Details/' + conteudo.Id;
-                hotMoviesContainer.appendChild(movieLink);
-
-                const movieCard = document.createElement('div');
-                movieCard.className = 'filmeCard';
-                movieLink.appendChild(movieCard);
-
-                const movieImage = document.createElement('img');
-                movieImage.className = 'filmes';
-                movieImage.alt = 'filme';
-                movieImage.src = conteudo.ImgUrl;
-                movieImage.title = conteudo.Nome;
-                movieCard.appendChild(movieImage);
-
-                const overlay = document.createElement('div');
-                overlay.className = 'filme-overlay';
-                movieCard.appendChild(overlay);
-
-                const movieTitle = document.createElement('strong');
-                movieTitle.textContent = conteudo.Nome;
-                overlay.appendChild(movieTitle);
-
-                const rating = document.createElement('span');
-                rating.className = 'position-absolute bottom-0 fs-5 mb-2';
-                rating.style.left = '0px';
-                rating.style.right = '0px';
-                rating.textContent = conteudo.Rating;
-                overlay.appendChild(rating);
-            }
-        });
-
-        // Cria a seccção de recomendados
-        const recommendedSection = document.createElement('div');
-        recommendedSection.className = 'row pt-4 pt-5';
-        mainDiv.appendChild(recommendedSection);
-
-        const recommendedTitle = document.createElement('h1');
-        recommendedTitle.textContent = 'Recommended';
-        recommendedSection.appendChild(recommendedTitle);
-
-        const recommendedContainer = document.createElement('div');
-        recommendedContainer.className = 'd-flex justify-content-center';
-        recommendedSection.appendChild(recommendedContainer);
-    }
-</script>
 
 <div class="text-center">
-    <div class="main-div"></div>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <div class="row pt-4">
+        <h1 class="loginRegisterFont">Hot Movies</h1>
+        <div className="filme" class="text-center">
+            <div class="all_filmes d-flex justify-content-center">
+                @foreach (var conteudo in Model.Where(c => c.Tipo == false && int.Parse(c.AnoLancamento) > 2022).Take(3))
+                {
+                    <a class="filmeHref" href="/conteudos/details/@conteudo.Id">
+                        <div class="filmeCard">
+                            <img class="filmes" alt="filme" src="@conteudo.ImgUrl" title="@conteudo.Nome" />
+                            <div class="filme-overlay">
+                                <strong>@conteudo.Nome</strong>
+                                <span class="position-absolute bottom-0 fs-5 mb-2" style="left: 0px ; right: 0px">@conteudo.Rating </span>
+                            </div>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row pt-4">
+        <h1 class="loginRegisterFont">Recomendados</h1>
+    </div>
 </div>

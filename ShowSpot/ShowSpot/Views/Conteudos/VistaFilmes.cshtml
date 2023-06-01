@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ShowSpot.Models.Conteudos>
+@{
+    ViewData["Title"] = "Filmes";
+}
+
+<div class ="text-center">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <div class="container-fluid p-0" style={{overflow: 'hidden' }}>
+        <div class="row" style= "maxHeight: 100%">
+            <div class="mt-3 pt-2 pb-3">
+                <h1 class="loginRegisterFont">Filmes</h1>
+                <div class="all_filmes d-flex justify-content-center">
+                    @foreach (var conteudo in Model.Where(c => c.Tipo == false))
+                    {
+                        <a class="filmeHref" href='/conteudos/details/@conteudo.Id'>
+                            <div class="filmeCard">
+                                <img class="filmes" alt="filme" src= '@conteudo.ImgUrl' title= '@conteudo.Nome' />
+                                <div class="filme-overlay">
+                                    <strong>@conteudo.Nome</strong>
+                                    <span class="position-absolute bottom-0 fs-5 mb-2" style="left: 0px ; right: 0px">@conteudo.Rating</span>
+                                </div>
+                            </div>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
