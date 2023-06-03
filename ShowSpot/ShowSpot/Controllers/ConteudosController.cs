@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
@@ -87,6 +88,68 @@ namespace ShowSpot.Controllers
             ViewBag.Series = JsonConvert.SerializeObject(result);
             ViewBag.Tags = JsonConvert.SerializeObject(tags);
             
+            return View();
+        }
+
+        public IActionResult ViewBiblioteca()
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Name);
+
+            var user = _context.Users.Where(e => e.UserName == userEmail).FirstOrDefault();
+
+            if (user == null)
+            {
+                return new JsonResult(NotFound());
+            }
+
+            var userFavs = _context.Favoritos
+                .Where(f => f.UserFK == user.Id.ToString())
+                .Join(_context.Conteudos, fav => fav.ConteudosFK, c => c.Id, (fav, c) => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.ImgUrl,
+                    c.Sinopse,
+                    c.Rating,
+                    c.Tipo,
+                    c.Runtime,
+                    c.AnoLancamento,
+                    c.LinkTrailer,
+                    Tag = _context.ConteudoTags
+                        .Where(ct => ct.ConteudoFK == c.Id)
+                        .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                        .FirstOrDefault()
+                })
+                .OrderByDescending(c => c.Id)
+                .Take(50)
+                .ToList();
+
+            ViewBag.Favoritos = JsonConvert.SerializeObject(userFavs);
+            
+            var userWL = _context.WatchLaters
+                .Where(f => f.UtilizadorFK == user.Id.ToString())
+                .Join(_context.Conteudos, fav => fav.ConteudosFK, c => c.Id, (fav, c) => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.ImgUrl,
+                    c.Sinopse,
+                    c.Rating,
+                    c.Tipo,
+                    c.Runtime,
+                    c.AnoLancamento,
+                    c.LinkTrailer,
+                    Tag = _context.ConteudoTags
+                        .Where(ct => ct.ConteudoFK == c.Id)
+                        .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                        .FirstOrDefault()
+                })
+                .OrderByDescending(c => c.Id)
+                .Take(50)
+                .ToList();
+            
+            ViewBag.WatchLaters = JsonConvert.SerializeObject(userWL);
+
             return View();
         }
 
@@ -267,6 +330,71 @@ namespace ShowSpot.Controllers
         private bool ConteudosExists(int id)
         {
           return (_context.Conteudos?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+        
+        
+        [Route("/addFavorito/{idC}")]
+        async public Task<IActionResult> addFavorito(int idC)
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Name);
+            var user = _context.Users.Where(e => e.UserName == userEmail).FirstOrDefault();
+            
+            var query = _context.Favoritos.Where(u =>
+                u.UserFK == user.Id && u.ConteudosFK == Convert.ToInt32(idC)).FirstOrDefaultAsync();
+            
+            Favoritos fav = new Favoritos
+            {
+                ConteudosFK = idC,
+                UserFK = user.Id
+            };
+            
+            if (query.Result == null)
+            {
+                _context.Favoritos.Add(fav);
+                _context.SaveChanges();
+                return RedirectToAction("Details", "Conteudos", new { id = idC });
+
+            }
+            else
+            {
+                _context.Favoritos.Remove(_context.Favoritos.Single(u =>
+                    u.UserFK == user.Id && u.ConteudosFK == Convert.ToInt32(idC)));
+                _context.SaveChanges();
+                return RedirectToAction("Details", "Conteudos", new { id = idC });
+
+            }
+        }
+        
+        [Route("addWatchLater/{idC}")]
+        async public Task<IActionResult> addWatchLater(int idC)
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Name);
+            var user = _context.Users.Where(e => e.UserName == userEmail).FirstOrDefault();
+            
+            var query = _context.WatchLaters.Where(u =>
+                u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idC)).FirstOrDefaultAsync();
+            
+            WatchLaters WL = new WatchLaters()
+            {
+                ConteudosFK = idC,
+                UtilizadorFK = user.Id
+            };
+            
+            if (query.Result == null)
+            {
+                _context.WatchLaters.Add(WL);
+                _context.SaveChanges();
+                return RedirectToAction("Details", "Conteudos", new { id = idC });
+
+            }
+            else
+            {
+                _context.WatchLaters.Remove(_context.WatchLaters.Single(u =>
+                    u.UtilizadorFK == user.Id && u.ConteudosFK == Convert.ToInt32(idC)));
+                _context.SaveChanges();
+                return RedirectToAction("Details", "Conteudos", new { id = idC });
+
+            }
         }
     }
 }

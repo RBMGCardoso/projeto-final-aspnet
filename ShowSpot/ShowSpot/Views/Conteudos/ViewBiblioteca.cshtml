@@ -1,0 +1,41 @@
+@using Newtonsoft.Json
+@model dynamic
+
+@{
+    ViewBag.Title = "Biblioteca";
+}
+
+<link rel="stylesheet" href="~/css/style.css" />
+<div class="mt-3 pt-2 pb-3 text-center">
+    <h1 class="loginRegisterFont">Favoritos</h1>
+    <div class="all_filmes d-flex justify-content-center">
+        @foreach (var conteudo in JsonConvert.DeserializeObject(@ViewBag.Favoritos))
+        {
+            <a class="filmeHref" href='/conteudos/details/@conteudo.Id'>
+                <div class="filmeCard">
+                    <img class="filmes" alt="filme" src='@conteudo.ImgUrl' title='@conteudo.Nome'/>
+                    <div class="filme-overlay">
+                        <strong>@conteudo.Nome</strong>
+                        <span class="position-absolute bottom-0 fs-5 mb-2" style="left: 0px ; right: 0px">@conteudo.Rating</span>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+    
+    <h1 class="loginRegisterFont">Watch Later</h1>
+    <div class="all_filmes d-flex justify-content-center">
+        @foreach (var conteudo in JsonConvert.DeserializeObject(@ViewBag.WatchLaters))
+        {
+            <a class="filmeHref" href='/conteudos/details/@conteudo.Id'>
+                <div class="filmeCard">
+                    <img class="filmes" alt="filme" src='@conteudo.ImgUrl' title='@conteudo.Nome'/>
+                    <div class="filme-overlay">
+                        <strong>@conteudo.Nome</strong>
+                        <span class="position-absolute bottom-0 fs-5 mb-2" style="left: 0px ; right: 0px">@conteudo.Rating</span>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</div>
