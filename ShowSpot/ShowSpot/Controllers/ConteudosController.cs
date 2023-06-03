@@ -27,14 +27,7 @@ namespace ShowSpot.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
-
-        public List<Conteudos> ConteudosList()
-        {
-            var conteudos = _context.Conteudos.ToList();
-
-            return conteudos;
-        }
-
+        
         public IActionResult VistaFilmes()
         {
             var result = _context.Conteudos
@@ -68,8 +61,33 @@ namespace ShowSpot.Controllers
 
         public IActionResult VistaSeries()
         {
-            var conteudos = ConteudosList();
-            return View(conteudos);
+            var result = _context.Conteudos
+                .Where(c => c.Tipo == true)
+                .OrderByDescending(c => c.Id)
+                .Take(50)
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.ImgUrl,
+                    c.Sinopse,
+                    c.Rating,
+                    c.Tipo,
+                    c.Runtime,
+                    c.AnoLancamento,
+                    c.LinkTrailer,
+                    Tag = _context.ConteudoTags
+                        .Where(ct => ct.ConteudoFK == c.Id)
+                        .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                        .FirstOrDefault()
+                });
+
+            var tags = _context.Tags.Select(t => t.Nome);
+            
+            ViewBag.Series = JsonConvert.SerializeObject(result);
+            ViewBag.Tags = JsonConvert.SerializeObject(tags);
+            
+            return View();
         }
 
         // GET: Conteudos
@@ -89,13 +107,30 @@ namespace ShowSpot.Controllers
             }
 
             var conteudos = await _context.Conteudos
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.ImgUrl,
+                    c.Sinopse,
+                    c.Rating,
+                    c.Tipo,
+                    c.Runtime,
+                    c.AnoLancamento,
+                    c.LinkTrailer,
+                    Tag = _context.ConteudoTags
+                        .Where(ct => ct.ConteudoFK == c.Id)
+                        .Join(_context.Tags, ct => ct.TagFK, t => t.Id, (ct, t) => t.Nome)
+                        .FirstOrDefault()
+                }).FirstOrDefaultAsync(m => m.Id == id);
             if (conteudos == null)
             {
                 return NotFound();
             }
 
-            return View(conteudos);
+            ViewBag.Conteudo = JsonConvert.SerializeObject(conteudos);
+
+            return View();
         }
 
         // GET: Conteudos/Create

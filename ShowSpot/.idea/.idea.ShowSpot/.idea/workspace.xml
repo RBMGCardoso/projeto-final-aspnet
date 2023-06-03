@@ -8,38 +8,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e1c7dd5-48fd-482f-837c-98abb6395488" name="Changes" comment="">
+    <list default="true" id="0e1c7dd5-48fd-482f-837c-98abb6395488" name="Changes" comment="More missing files">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/VistaFilmes.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/VistaFilmes.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230513105921_whyEmpty.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230513105921_whyEmpty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Migrations/20230518193300_AspnetUserReplacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Migrations/20230518193300_AspnetUserReplacement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/ShowSpot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/ShowSpot.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Details.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/VistaSeries.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/VistaSeries.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/refint/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/refint/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShowSpot.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShowSpot.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShowSpot.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShowSpot.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/wwwroot/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +64,8 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Controllers/API/ConteudosAPIController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShowSpot/Models/ConteudoTags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,8 +94,7 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;,
-      &quot;mysql&quot;
+      &quot;sqlite&quot;
     ],
     &quot;rider.external.source.directories&quot;: [
       &quot;/home/nuttell/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
@@ -158,19 +158,7 @@
       <workItem from="1683723254817" duration="6167000" />
       <workItem from="1684162987036" duration="3650000" />
       <workItem from="1684431283685" duration="8877000" />
-      <workItem from="1684582767230" duration="9221000" />
-      <workItem from="1684592603898" duration="68000" />
-      <workItem from="1684593191379" duration="109000" />
-      <workItem from="1684593407282" duration="721000" />
-      <workItem from="1684676653676" duration="1048000" />
-      <workItem from="1684769047144" duration="20000" />
-      <workItem from="1684889057402" duration="6086000" />
-      <workItem from="1684930407193" duration="678000" />
-      <workItem from="1684960037141" duration="13000" />
-      <workItem from="1685404794358" duration="251000" />
-      <workItem from="1685455665978" duration="7151000" />
-      <workItem from="1685650106739" duration="247000" />
-      <workItem from="1685650503918" duration="3336000" />
+      <workItem from="1684582767230" duration="8817000" />
     </task>
     <task id="LOCAL-00001" summary="Fundação do projeto: Base de dados, Views básicas, Modelos">
       <created>1683215342925</created>
@@ -235,28 +223,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684582821929</updated>
     </task>
-    <task id="LOCAL-00010" summary="Sistema básico de recomendação dado o id do user. {retorna valores repetidos erradamente}">
-      <created>1684591979066</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1684591979066</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Recomendados Funcionais">
-      <created>1684896126181</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1684896126181</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)">
-      <created>1685465977390</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1685465977390</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,9 +260,6 @@
     <MESSAGE value="Recomendados alterados para favoritos, Modelo de utilizadores removido e utilização de users do AspNetCore" />
     <MESSAGE value="missingfiles" />
     <MESSAGE value="More missing files" />
-    <MESSAGE value="Sistema básico de recomendação dado o id do user. {retorna valores repetidos erradamente}" />
-    <MESSAGE value="Recomendados Funcionais" />
-    <MESSAGE value="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)" />
+    <option name="LAST_COMMIT_MESSAGE" value="More missing files" />
   </component>
 </project>

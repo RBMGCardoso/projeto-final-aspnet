@@ -1,54 +1,36 @@
-﻿@model ShowSpot.Models.Conteudos
+﻿@using Newtonsoft.Json
+@model ShowSpot.Models.Conteudos
 
 @{
     ViewData["Title"] = "Details";
 }
-
-<h1>Details</h1>
-
+<link rel="stylesheet" href="~/css/style.css" />
 <div>
-    <h4>Conteudos</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImgUrl)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImgUrl)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Sinopse)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Sinopse)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tipo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Tipo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Runtime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Runtime)
-        </dd>
-    </dl>
+    <div class='row contentCard'>
+                    <div class='col-4 contentCard-left d-flex flex-column'>
+                        <img class="mt-4 mb-2" style="objectFit: 'contain' ; height: 450px" src="@JsonConvert.DeserializeObject(ViewBag.Conteudo).ImgUrl"/>
+                        <div class="row justify-content-center mb-5"><strong>@JsonConvert.DeserializeObject(ViewBag.Conteudo).Nome</strong></div>
+                        <div class="row fs-6 justify-content-center">Ano lançamento: @JsonConvert.DeserializeObject(ViewBag.Conteudo).AnoLancamento</div>
+                        <div class="row fs-6 justify-content-center">Duração: @JsonConvert.DeserializeObject(ViewBag.Conteudo).Runtime</div>
+                        <div class="row fs-6 justify-content-center">Rating: @JsonConvert.DeserializeObject(ViewBag.Conteudo).Rating</div>
+
+
+                        <div clas = "row fs-6 justify-content-center">
+                            <button type="submit" class="btn btn-secondary">Adicionar à biblioteca</button>
+                        </div>
+                        <div clas = "row fs-6 justify-content-center">
+                            <button type="submit" class="btn btn-secondary">Ver mais tarde</button>
+                        </div>
+                    </div>
+                    <div class='col contentCard-right'>
+                        <div class="row m-2 mb-3">Sinopse:</div>
+                        <div class="row fs-4 ps-5 pe-5 justify-content-center mb-5">@JsonConvert.DeserializeObject(ViewBag.Conteudo).Sinopse</div>
+                        <div class="row justify-content-center mb-5">
+                        <iframe height="500" src="@JsonConvert.DeserializeObject(ViewBag.Conteudo).LinkTrailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

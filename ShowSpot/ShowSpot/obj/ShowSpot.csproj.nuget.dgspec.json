@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj": {}
+    "/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj": {}
   },
   "projects": {
-    "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj": {
+    "/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
+        "projectUniqueName": "/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
         "projectName": "ShowSpot",
-        "projectPath": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
+        "projectPath": "/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/ShowSpot.csproj",
         "packagesPath": "/home/nuttell/.nuget/packages/",
-        "outputPath": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/obj/",
+        "outputPath": "/home/nuttell/Documentos/Aulas/DesenvolvimentoWeb/Projetos/projeto-final-aspnet/ShowSpot/ShowSpot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/nuttell/.nuget/NuGet/NuGet.Config"
@@ -87,7 +87,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.3, 7.0.3]"
+              "version": "[7.0.4, 7.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }

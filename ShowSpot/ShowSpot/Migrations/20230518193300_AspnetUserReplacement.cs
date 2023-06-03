@@ -11,8 +11,6 @@ namespace ShowSpot.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
-
             migrationBuilder.DropTable(
                 name: "Utilizadores");
 
