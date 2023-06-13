@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -22,7 +23,11 @@ namespace ShowSpot.Controllers
         // GET: Tags
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Tags.ToListAsync());
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(await _context.Tags.ToListAsync());
+            return Forbid();
+            
         }
 
         // GET: Tags/Details/5
@@ -40,13 +45,19 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(tags);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(tags); 
+            return Forbid();
         }
 
         // GET: Tags/Create
         public IActionResult Create()
         {
-            return View();
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(); 
+            return Forbid();
         }
 
         // POST: Tags/Create
@@ -78,7 +89,10 @@ namespace ShowSpot.Controllers
             {
                 return NotFound();
             }
-            return View(tags);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(tags); 
+            return Forbid();
         }
 
         // POST: Tags/Edit/5
@@ -131,7 +145,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(tags);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(tags); 
+            return Forbid();
         }
 
         // POST: Tags/Delete/5

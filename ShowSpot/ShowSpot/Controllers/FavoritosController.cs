@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -23,7 +24,11 @@ namespace ShowSpot.Controllers
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Favoritos.Include(f => f.Conteudo).Include(f => f.User);
-            return View(await applicationDbContext.ToListAsync());
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(await applicationDbContext.ToListAsync());
+            return Forbid();
+            
         }
 
         // GET: Favoritos/Details/5
@@ -42,8 +47,10 @@ namespace ShowSpot.Controllers
             {
                 return NotFound();
             }
-
-            return View(favoritos);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(favoritos); 
+            return Forbid();
         }
 
         // GET: Favoritos/Create
@@ -51,7 +58,10 @@ namespace ShowSpot.Controllers
         {
             ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome");
             ViewData["UserFK"] = new SelectList(_context.Users, "Id", "UserName");
-            return View();
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(); 
+            return Forbid();
         }
 
         // POST: Favoritos/Create
@@ -81,7 +91,11 @@ namespace ShowSpot.Controllers
             }
             ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome", favoritos.ConteudosFK);
             ViewData["UserFK"] = new SelectList(_context.Users, "Id", "UserName", favoritos.UserFK);
-            return View(favoritos);
+            
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(favoritos); 
+            return Forbid();
         }
 
         // POST: Favoritos/Edit/5
@@ -138,7 +152,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(favoritos);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(favoritos); 
+            return Forbid();
         }
 
         // POST: Favoritos/Delete/5

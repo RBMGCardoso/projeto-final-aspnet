@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -23,7 +24,11 @@ namespace ShowSpot.Controllers
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.WatchLaters.Include(w => w.Conteudo).Include(w => w.User);
-            return View(await applicationDbContext.ToListAsync());
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(await applicationDbContext.ToListAsync());
+            return Forbid();
+            
         }
 
         // GET: WatchLater/Details/5
@@ -43,7 +48,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(watchLaters);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(watchLaters); 
+            return Forbid();
         }
 
         // GET: WatchLater/Create
@@ -51,7 +59,10 @@ namespace ShowSpot.Controllers
         {
             ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome");
             ViewData["UtilizadorFK"] = new SelectList(_context.Users, "Id", "UserName");
-            return View();
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(); 
+            return Forbid();
         }
 
         // POST: WatchLater/Create
@@ -87,7 +98,10 @@ namespace ShowSpot.Controllers
             }
             ViewData["ConteudosFK"] = new SelectList(_context.Conteudos, "Id", "Nome", watchLaters.ConteudosFK);
             ViewData["UtilizadorFK"] = new SelectList(_context.Users, "Id", "UserName", watchLaters.UtilizadorFK);
-            return View(watchLaters);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(watchLaters); 
+            return Forbid();
         }
 
         // POST: WatchLater/Edit/5
@@ -144,7 +158,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(watchLaters);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(watchLaters); 
+            return Forbid();
         }
 
         // POST: WatchLater/Delete/5

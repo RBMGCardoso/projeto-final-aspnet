@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -23,7 +24,11 @@ namespace ShowSpot.Controllers
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.ConteudoTags.Include(c => c.Conteudo).Include(c => c.Tag);
-            return View(await applicationDbContext.ToListAsync());
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(await applicationDbContext.ToListAsync());
+            return Forbid();
+            
         }
 
         // GET: ConteudosTags/Details/5
@@ -43,7 +48,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(conteudoTags);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(conteudoTags); 
+            return Forbid();
         }
 
         // GET: ConteudosTags/Create
@@ -51,7 +59,10 @@ namespace ShowSpot.Controllers
         {
             ViewData["ConteudoFK"] = new SelectList(_context.Conteudos, "Id", "Nome");
             ViewData["TagFK"] = new SelectList(_context.Tags, "Id", "Nome");
-            return View();
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(); 
+            return Forbid();
         }
 
         // POST: ConteudosTags/Create
@@ -82,7 +93,10 @@ namespace ShowSpot.Controllers
             }
             ViewData["ConteudoFK"] = new SelectList(_context.Conteudos, "Id", "Id", conteudoTags.ConteudoFK);
             ViewData["TagFK"] = new SelectList(_context.Tags, "Id", "Id", conteudoTags.TagFK);
-            return View(conteudoTags);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(conteudoTags); 
+            return Forbid();
         }
 
         // POST: ConteudosTags/Edit/5
@@ -139,7 +153,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(conteudoTags);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(conteudoTags); 
+            return Forbid();
         }
 
         // POST: ConteudosTags/Delete/5

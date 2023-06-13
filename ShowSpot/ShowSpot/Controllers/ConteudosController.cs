@@ -156,9 +156,13 @@ namespace ShowSpot.Controllers
         // GET: Conteudos
         public async Task<IActionResult> Index()
         {
-              return _context.Conteudos != null ? 
-                          View(await _context.Conteudos.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Conteudos'  is null.");
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return _context.Conteudos != null ? 
+                View(await _context.Conteudos.ToListAsync()) :
+                Problem("Entity set 'ApplicationDbContext.Conteudos'  is null.");
+            return Forbid();
+              
         }
 
         // GET: Conteudos/Details/5
@@ -199,7 +203,10 @@ namespace ShowSpot.Controllers
         // GET: Conteudos/Create
         public IActionResult Create()
         {
-            return View();
+            var user = User.FindFirstValue(ClaimTypes.Name);
+            if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(); 
+            return Forbid();
         }
 
         // POST: Conteudos/Create
@@ -252,7 +259,11 @@ namespace ShowSpot.Controllers
             {
                 return NotFound();
             }
-            return View(conteudos);
+            
+            var user = User.FindFirstValue(ClaimTypes.Name);
+if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(conteudos); 
+            return Forbid();
         }
 
         // POST: Conteudos/Edit/5
@@ -305,7 +316,10 @@ namespace ShowSpot.Controllers
                 return NotFound();
             }
 
-            return View(conteudos);
+            var user = User.FindFirstValue(ClaimTypes.Name);
+if(user != null) user = user.Split('@')[0];
+            if(user == "admin") return View(conteudos); 
+            return Forbid();
         }
 
         // POST: Conteudos/Delete/5

@@ -8,19 +8,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e1c7dd5-48fd-482f-837c-98abb6395488" name="Changes" comment="More missing files">
-      <change afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/ViewBiblioteca.cshtml" afterDir="false" />
+    <list default="true" id="0e1c7dd5-48fd-482f-837c-98abb6395488" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosTagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosTagsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/FavoritosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/FavoritosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/TagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/TagsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/refint/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/refint/ShowSpot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +66,80 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/527a2dcd76ec41ecb0820c0926ad20f7a28600/a7/a7b388f1/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/527a2dcd76ec41ecb0820c0926ad20f7a28600/bd/979df5eb/ManualResetEventSlim.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68f7f40ec0194882bd4c47e3e5c931ef1e2000/05/dae7ea00/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68f7f40ec0194882bd4c47e3e5c931ef1e2000/67/5a89014a/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e16489307cfb4091accf4063d78ef66636e00/45/1fe1ebe2/RazorView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShowSpot/Models/ConteudoTags.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,32 +151,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Migrations",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Migrations&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
     ],
-    "rider.external.source.directories": [
-      "/home/nuttell/.config/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/home/nuttell/.config/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/home/nuttell/.local/share/Symbols/src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/nuttell/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/nuttell/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/nuttell/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ShowSpot: https">
     <configuration name="ShowSpot: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ShowSpot/ShowSpot.csproj" />
@@ -138,8 +233,19 @@
       <workItem from="1683723254817" duration="6167000" />
       <workItem from="1684162987036" duration="3650000" />
       <workItem from="1684431283685" duration="8877000" />
-      <workItem from="1684582767230" duration="8817000" />
-      <workItem from="1685801247856" duration="5163000" />
+      <workItem from="1684582767230" duration="9221000" />
+      <workItem from="1684592603898" duration="68000" />
+      <workItem from="1684593191379" duration="109000" />
+      <workItem from="1684593407282" duration="721000" />
+      <workItem from="1684676653676" duration="1048000" />
+      <workItem from="1684769047144" duration="20000" />
+      <workItem from="1684889057402" duration="6086000" />
+      <workItem from="1684930407193" duration="678000" />
+      <workItem from="1684960037141" duration="13000" />
+      <workItem from="1685404794358" duration="251000" />
+      <workItem from="1685455665978" duration="7151000" />
+      <workItem from="1685650106739" duration="247000" />
+      <workItem from="1685650503918" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="Fundação do projeto: Base de dados, Views básicas, Modelos">
       <created>1683215342925</created>
@@ -204,7 +310,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684582821929</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Sistema básico de recomendação dado o id do user. {retorna valores repetidos erradamente}">
+      <created>1684591979066</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684591979066</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Recomendados Funcionais">
+      <created>1684896126181</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684896126181</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)">
+      <created>1685465977390</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685465977390</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +368,34 @@
     <MESSAGE value="Recomendados alterados para favoritos, Modelo de utilizadores removido e utilização de users do AspNetCore" />
     <MESSAGE value="missingfiles" />
     <MESSAGE value="More missing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="More missing files" />
+    <MESSAGE value="Sistema básico de recomendação dado o id do user. {retorna valores repetidos erradamente}" />
+    <MESSAGE value="Recomendados Funcionais" />
+    <MESSAGE value="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs</url>
+          <line>205</line>
+          <properties documentPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" initialLine="201" containingFunctionPresentation="Method 'Create'">
+            <startOffsets>
+              <option value="7086" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7122" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#ShowSpot.Controllers.HomeController.Index" memberName="recomendados" />
+        <PinnedItemInfo parentTag="Frame#ShowSpot.Controllers.HomeController.Index" memberName="this" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
