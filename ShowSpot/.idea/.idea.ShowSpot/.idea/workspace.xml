@@ -9,36 +9,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1c7dd5-48fd-482f-837c-98abb6395488" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ShowSpot/Views/Home/AccessDenied.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowSpot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosTagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosTagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/FavoritosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/FavoritosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Areas/Identity/Pages/Account/ConfirmEmail.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/TagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/TagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Controllers/WatchLaterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Delete.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/Views/Conteudos/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ShowSpot.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/af/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/af/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ar/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ar/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/az/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/az/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/bg/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/bg/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/bn-BD/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/bn-BD/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/cs/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/cs/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/da/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/da/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/de/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/de/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/el/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/el/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/es/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/es/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fa/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fa/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fi-FI/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fi-FI/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fr-BE/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fr-BE/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fr/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/fr/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/he/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/he/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/hr/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/hr/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/hu/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/hu/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/hy/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/hy/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/id/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/id/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/is/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/is/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/it/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/it/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ja/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ja/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ko-KR/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ko-KR/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ku/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ku/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/lv/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/lv/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ms-MY/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ms-MY/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/mt/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/mt/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/nb-NO/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/nb-NO/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/nb/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/nb/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/nl/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/nl/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/pl/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/pl/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/pt/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/pt/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ro/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ro/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ru/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/ru/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sk/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sk/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sl/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sl/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sr-Latn/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sr-Latn/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sr/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sr/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sv/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/sv/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/th-TH/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/th-TH/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/tr/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/tr/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/uk/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/uk/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/uz-Cyrl-UZ/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/uz-Cyrl-UZ/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/uz-Latn-UZ/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/uz-Latn-UZ/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/vi/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/vi/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/zh-CN/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/zh-CN/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/zh-Hans/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/zh-Hans/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/zh-Hant/Humanizer.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/bin/Debug/net7.0/zh-Hant/Humanizer.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ShowSpot.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/ref/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/refint/ShowSpot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/refint/ShowSpot.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShowSpot.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShowSpot.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShowSpot.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShowSpot.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/ShowSpot.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShowSpot/obj/project.packagespec.json" afterDir="false" />
@@ -140,6 +190,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/68f7f40ec0194882bd4c47e3e5c931ef1e2000/67/5a89014a/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e16489307cfb4091accf4063d78ef66636e00/45/1fe1ebe2/RazorView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShowSpot/Models/ConteudoTags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/nuttell/RiderProjects/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -246,6 +297,7 @@
       <workItem from="1685455665978" duration="7151000" />
       <workItem from="1685650106739" duration="247000" />
       <workItem from="1685650503918" duration="3336000" />
+      <workItem from="1686856491461" duration="4521000" />
     </task>
     <task id="LOCAL-00001" summary="Fundação do projeto: Base de dados, Views básicas, Modelos">
       <created>1683215342925</created>
@@ -331,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685465977390</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Recomendados adicionados&#10;Proteção de páginas de CRUD&#10;Hot movies adicionados&#10;Botões de adicionar a favoritos e watchlaters na vista de filmes já não aparecem se não houver user logado&#10;Traduções para português">
+      <created>1686665835884</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686665835884</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,26 +430,10 @@
     <MESSAGE value="Sistema básico de recomendação dado o id do user. {retorna valores repetidos erradamente}" />
     <MESSAGE value="Recomendados Funcionais" />
     <MESSAGE value="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Favoritos na biblioteca&#10;Watch laters na biblioteca&#10;Recomendados funcionais&#10;Botões de adicionar aos favoritos/watchlater funcionais (com feedback)" />
+    <MESSAGE value="Recomendados adicionados&#10;Proteção de páginas de CRUD&#10;Hot movies adicionados&#10;Botões de adicionar a favoritos e watchlaters na vista de filmes já não aparecem se não houver user logado&#10;Traduções para português" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recomendados adicionados&#10;Proteção de páginas de CRUD&#10;Hot movies adicionados&#10;Botões de adicionar a favoritos e watchlaters na vista de filmes já não aparecem se não houver user logado&#10;Traduções para português" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs</url>
-          <line>205</line>
-          <properties documentPath="$PROJECT_DIR$/ShowSpot/Controllers/ConteudosController.cs" initialLine="201" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="7086" />
-            </startOffsets>
-            <endOffsets>
-              <option value="7122" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#ShowSpot.Controllers.HomeController.Index" memberName="recomendados" />
