@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\rodri\source\repos\projeto-final-aspnet\ShowSpot\ShowSpot
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -126,6 +122,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Favoritos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodri/source/repos/projeto-final-aspnet/ShowSpot/ShowSpot/Views/Home/Index.cshtml]

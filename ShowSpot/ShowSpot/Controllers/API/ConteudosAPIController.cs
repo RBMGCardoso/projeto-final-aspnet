@@ -514,5 +514,38 @@ namespace ShowSpot.Controllers.API
             
             return new JsonResult(Ok(userFavs));
         }
+
+        //adiciona o conteudo. utilizado na pagina de CreateContent no react
+        [HttpPost("addConteudo")]
+        public IActionResult addConteudo([FromBody]ConteudoRequest model)
+        {
+            var conteudo = new Conteudos 
+            {
+                Nome = model.Nome,
+                ImgUrl = model.ImgUrl,
+                Sinopse = model.Sinopse,
+                Rating = model.Rating,
+                Tipo = model.Tipo,
+                Runtime = model.Runtime,
+                AnoLancamento = model.AnoLancamento,
+                LinkTrailer = model.LinkTrailer,
+            };
+               
+            try
+            {
+                // adiciona os conteudos à tabela Conteudos
+                _context.Conteudos.Add(conteudo);
+
+                // guarda as alterações na base de dados
+                _context.SaveChanges();
+
+                return Ok("Sucesso");
+            }
+            catch (Exception ex)
+            {
+                // Manipula qualquer erro que possa acontecer
+                return StatusCode(500, "Erro: " + ex.Message);
+            }
+        }
     }
 }
