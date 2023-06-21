@@ -3,12 +3,14 @@
     "",
     "\\ShowSpot",
     "\\ShowSpot\\ShowSpot",
-    "\\ShowSpot\\ShowSpot\\Controllers",
-    "\\ShowSpot\\ShowSpot\\Controllers\\API",
-    "\\ShowSpot\\ShowSpot\\Data",
-    "\\ShowSpot\\ShowSpot\\Migrations",
-    "\\ShowSpot\\ShowSpot\\Models"
+    "\\ShowSpot\\ShowSpot\\Areas",
+    "\\ShowSpot\\ShowSpot\\Areas\\Identity",
+    "\\ShowSpot\\ShowSpot\\Areas\\Identity\\Pages",
+    "\\ShowSpot\\ShowSpot\\Areas\\Identity\\Pages\\Account",
+    "\\ShowSpot\\ShowSpot\\Views",
+    "\\ShowSpot\\ShowSpot\\Views\\Conteudos",
+    "\\ShowSpot\\ShowSpot\\Views\\Shared"
   ],
-  "SelectedNode": "\\ShowSpot\\ShowSpot.sln",
+  "SelectedNode": "\\ShowSpot\\ShowSpot\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }
